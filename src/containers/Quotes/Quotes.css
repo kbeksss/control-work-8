@@ -16,20 +16,3 @@
 .QCategories a{
     color: #000;
 }
-.EQuote{
-    display: flex;
-    border: 1px solid;
-    padding: 10px;
-    border-radius: 6px;
-    margin-bottom: 20px;
-    justify-content: space-between;
-}
-.ETextPart + div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.EQuote button{
-    padding: 10px 15px;
-    border-radius: 5px;
-}

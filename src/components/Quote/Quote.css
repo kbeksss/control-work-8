@@ -1,0 +1,17 @@
+.Quote{
+    display: flex;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.TextPart + div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Quote button{
+    padding: 10px 15px;
+    border-radius: 5px;
+}

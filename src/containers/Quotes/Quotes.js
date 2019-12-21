@@ -3,6 +3,7 @@ import './Quotes.css';
 import {CATEGORIES} from "../../constants";
 import axiosQuote from "../../axios-quote";
 import {NavLink} from "react-router-dom";
+import Quote from "../../components/Quote/Quote";
 
 class Quotes extends Component {
     state = {
@@ -53,16 +54,13 @@ class Quotes extends Component {
                 </div>
                 <div className="ReceivedQuotes">
                     {Object.keys(this.state.quotes).map(key => (
-                        <div className='EQuote' key={key}>
-                            <div className='ETextPart'>
-                                <p>{this.state.quotes[key].text}</p>
-                                <p> - {this.state.quotes[key].author}</p>
-                            </div>
-                            <div>
-                                <button type='button' onClick={() => this.goToEdit(key)}>Edit</button>
-                                <button type='button' onClick={() => this.deleteQuote(key)}>X</button>
-                            </div>
-                        </div>
+                        <Quote
+                            key={key}
+                            author={this.state.quotes[key].author}
+                            text={this.state.quotes[key].text}
+                            onEdit={() => this.goToEdit(key)}
+                            onRemove={() => this.deleteQuote(key)}
+                        />
                     ))}
                 </div>
             </div>
