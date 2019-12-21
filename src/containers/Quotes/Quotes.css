@@ -1,0 +1,35 @@
+.Quotes{
+    margin: 10px auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+.QCategories{
+    width: 40%;
+}
+.ReceivedQuotes{
+    width: 60%;
+}
+.QCategories ul{
+    list-style: none;
+}
+.QCategories a{
+    color: #000;
+}
+.EQuote{
+    display: flex;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.ETextPart + div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.EQuote button{
+    padding: 10px 15px;
+    border-radius: 5px;
+}

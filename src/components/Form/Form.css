@@ -1,0 +1,38 @@
+.Form{
+    padding: 0 10px;
+    margin: 0 auto;
+    max-width: 700px;
+}
+.Inputs{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.Inputs > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Inputs input, .Inputs textarea{
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 10px;
+}
+
+.Variants{
+    padding: 5px;
+    border-bottom: 1px solid;
+}
+.Variants label{
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 4px 8px;
+    font-size: 15px;
+    margin: 3px 10px;
+}
+.Form .btn{
+    padding: 5px;
+    font-size: 18px;
+}

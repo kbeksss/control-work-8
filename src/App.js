@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter, Route, Switch} from "react-router-dom";
+import Quotes from "./containers/Quotes/Quotes";
+import AddQuote from "./containers/AddQoute/AddQuote";
+import Navigation from "./components/Navigation/Navigation";
+import Edit from "./components/Edit/Edit";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+const App = () => (
+    <BrowserRouter>
+        <Navigation/>
+        <Switch>
+            <Route path='/' exact component={Quotes}/>
+            <Route path='/quotes/:category' exact component={Quotes}/>
+            <Route path='/add-quote' component={AddQuote}/>
+            <Route path='/quotes/:id/edit' component={Edit}/>
+        </Switch>
+    </BrowserRouter>
+
+);
 
 export default App;

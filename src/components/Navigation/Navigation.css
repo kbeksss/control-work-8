@@ -1,0 +1,25 @@
+.Navigation{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid;
+}
+.Navigation ul{
+    list-style: none;
+}
+.Navigation li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.Navigation .Link{
+    border: 1px solid #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+}
+.Navigation .Link:hover{
+    background: #dddbdb;
+}
+.active{
+    background: #dddbdb;
+}
