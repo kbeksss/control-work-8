@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './Edit.css';
 import Form from "../Form/Form";
 import axiosQuote from "../../axios-quote";
 
