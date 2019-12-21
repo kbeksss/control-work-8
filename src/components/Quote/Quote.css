@@ -1,6 +1,6 @@
 .Quote{
     display: flex;
-    border: 1px solid;
+    border: 2px solid #00c205;
     padding: 10px;
     border-radius: 6px;
     margin-bottom: 20px;

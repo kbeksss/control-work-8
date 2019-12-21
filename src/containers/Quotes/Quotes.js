@@ -11,12 +11,15 @@ class Quotes extends Component {
     };
     requestQuotes = async () => {
         let url = 'quote.json';
-        if(this.props.match.category) url += '?orderBy="category"&equalTo="'+ this.props.match.params.category +'"' ;
+        if(this.props.match.params.category) {
+            console.log(this.props.match.params.category);
+            url += '?orderBy="category"&equalTo="'+ this.props.match.params.category +'"'
+        }
         const quotes = await axiosQuote.get(url);
         if(quotes.data){
             this.setState({quotes: quotes.data});
         } else {
-            console.error('Data hasn\t been received');
+            console.error('Data hasn\'t been received');
         }
     };
     componentDidMount() {

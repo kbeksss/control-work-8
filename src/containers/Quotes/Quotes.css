@@ -5,14 +5,22 @@
     justify-content: space-between;
 }
 .QCategories{
+    border-radius: 10px;
     width: 40%;
+    border: 2px solid #dd2800;
 }
 .ReceivedQuotes{
+    border-radius: 10px;
+    padding: 20px;
     width: 60%;
 }
 .QCategories ul{
     list-style: none;
 }
 .QCategories a{
-    color: #000;
+    color: #dd2800;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
 }
