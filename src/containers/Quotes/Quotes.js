@@ -45,7 +45,7 @@ class Quotes extends Component {
             <div className='Quotes'>
                 <div className="QCategories">
                     <ul>
-                        <li><NavLink to='/'>All</NavLink></li>
+                        <li><NavLink to='/' exact>All</NavLink></li>
                         {CATEGORIES.map(cat => {
                             return (
                                 <li key={cat.value}>
